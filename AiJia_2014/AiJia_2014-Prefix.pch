@@ -1,0 +1,42 @@
+//
+//  AiJia_2014-Prefix.pch
+//  AiJia_2014
+//
+//  Created by 宝源科技 on 15-2-1.
+//  Copyright (c) 2015年 lipengjun. All rights reserved.
+//
+
+#ifndef AiJia_2014_AiJia_2014_Prefix_pch
+#define AiJia_2014_AiJia_2014_Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#define kRGBA(R,G,B,A) [UIColor colorWithRed:R/255.0 green:G/255.0 blue:B/255.0 alpha:A]
+#define kScreenBounds [[UIScreen mainScreen] bounds]
+#define kFrameX self.view.frame.origin.x
+#define kFrameY self.view.frame.origin.y
+#define kBoundWidth self.view.bounds.size.width
+#define kBoundHeight self.view.bounds.size.height
+#define kSetFrameX(X) X.frame.origin.x + X.bounds.size.width
+#define kSetFrameY(Y) Y.frame.origin.y + Y.bounds.size.height
+
+#define HTTP @"http://www.jycvip.com/wop/api"
+#define kDataPersistence(Object, Key) [[NSUserDefaults standardUserDefaults] setObject:Object forKey:Key]
+#define kGetData(key) [[NSUserDefaults standardUserDefaults] objectForKey:key]
+//银联支付模式 00线上环境  01测试环境
+#define kMode_Development @"00"
+
+
+#define WHITE [UIColor whiteColor]
+#define CLEAR [UIColor clearColor]
+#define RED [UIColor redColor]
+#define BLUE [UIColor blueColor]
+#define BROWN [UIColor brownColor]
+#define YELLOW [UIColor yellowColor]
+#define CYAN [UIColor cyanColor]
+#define GRAY [UIColor grayColor]
+#define GREEN [UIColor greenColor]
+#define ORANGE [UIColor orangeColor]
+#define BLACK [UIColor blackColor]
+
+#endif
